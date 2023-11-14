@@ -1,0 +1,22 @@
+{
+    "name": "JATE",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "server": "nodemon server.js --ignore client",
+        "start": "npm run build && cd server && node server.js",
+        "build": "node_modules/.bin/webpack --mode production",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "client": "cd client && npm start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
